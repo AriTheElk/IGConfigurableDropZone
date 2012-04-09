@@ -12,7 +12,12 @@
 @implementation IGConfigurableDropZone
 
 
-
+//! Set the drop zone's drop action.
+/*!
+ * The drop action will get triggered when a file
+ * is dropped on the drop zone. The SEL action will
+ * run on the target object.
+ */
 - (void) setDropAction:(SEL)theAction target:(id)theTarget
 {
     targetObject = theTarget;
