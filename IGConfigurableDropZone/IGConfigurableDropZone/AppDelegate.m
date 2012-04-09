@@ -12,9 +12,33 @@
 
 @synthesize window = _window;
 
+
+- (void) theDropAction
+{
+    [myDropZone fadeOut];
+}
+
+- (void) theDragEnteredAction
+{
+    [myDropZone fadeIn];
+    [myDropZone setBackgroundImage:[NSImage imageNamed:@"IGDZBackground_Active.png"]];
+}
+
+- (void) theDragExitedAction
+{
+    [myDropZone setBackgroundImage:[NSImage imageNamed:@"IGDZBackground_Idle.png"]];
+}
+
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [myDropZone setDropAction:@selector(theDropAction) target:self];
+    [myDropZone setDragEnteredAction:@selector(theDragEnteredAction) target:self];
+    [myDropZone setDragExitedAction:@selector(theDragExitedAction) target:self];
+    
+    [myDropZone setBackgroundImage:[NSImage imageNamed:@"IGDZBackground_Idle.png"]];
+    
 }
 
 @end

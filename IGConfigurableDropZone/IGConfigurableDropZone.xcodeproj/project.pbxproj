@@ -17,6 +17,9 @@
 		269AEA451532735C0070867E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269AEA251532735B0070867E /* Cocoa.framework */; };
 		269AEA4D1532735C0070867E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA4B1532735C0070867E /* InfoPlist.strings */; };
 		269AEA501532735C0070867E /* IGConfigurableDropZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA4F1532735C0070867E /* IGConfigurableDropZoneTests.m */; };
+		269AEA5B153274560070867E /* IGConfigurableDropZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA5A153274560070867E /* IGConfigurableDropZone.m */; };
+		269AEA5E1532831E0070867E /* IGDZBackground_Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA5C1532831E0070867E /* IGDZBackground_Active.png */; };
+		269AEA5F1532831E0070867E /* IGDZBackground_Idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA5D1532831E0070867E /* IGDZBackground_Idle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		269AEA4C1532735C0070867E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		269AEA4E1532735C0070867E /* IGConfigurableDropZoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGConfigurableDropZoneTests.h; sourceTree = "<group>"; };
 		269AEA4F1532735C0070867E /* IGConfigurableDropZoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGConfigurableDropZoneTests.m; sourceTree = "<group>"; };
+		269AEA59153274560070867E /* IGConfigurableDropZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGConfigurableDropZone.h; sourceTree = "<group>"; };
+		269AEA5A153274560070867E /* IGConfigurableDropZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGConfigurableDropZone.m; sourceTree = "<group>"; };
+		269AEA5C1532831E0070867E /* IGDZBackground_Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IGDZBackground_Active.png; sourceTree = "<group>"; };
+		269AEA5D1532831E0070867E /* IGDZBackground_Idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IGDZBackground_Idle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +123,8 @@
 			children = (
 				269AEA371532735B0070867E /* AppDelegate.h */,
 				269AEA381532735B0070867E /* AppDelegate.m */,
+				269AEA59153274560070867E /* IGConfigurableDropZone.h */,
+				269AEA5A153274560070867E /* IGConfigurableDropZone.m */,
 				269AEA3A1532735C0070867E /* MainMenu.xib */,
 				269AEA2C1532735B0070867E /* Supporting Files */,
 			);
@@ -125,6 +134,7 @@
 		269AEA2C1532735B0070867E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				269AEA60153283230070867E /* Images */,
 				269AEA2D1532735B0070867E /* IGConfigurableDropZone-Info.plist */,
 				269AEA2E1532735B0070867E /* InfoPlist.strings */,
 				269AEA311532735B0070867E /* main.m */,
@@ -151,6 +161,15 @@
 				269AEA4B1532735C0070867E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		269AEA60153283230070867E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA5C1532831E0070867E /* IGDZBackground_Active.png */,
+				269AEA5D1532831E0070867E /* IGDZBackground_Idle.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +245,8 @@
 				269AEA301532735B0070867E /* InfoPlist.strings in Resources */,
 				269AEA361532735B0070867E /* Credits.rtf in Resources */,
 				269AEA3C1532735C0070867E /* MainMenu.xib in Resources */,
+				269AEA5E1532831E0070867E /* IGDZBackground_Active.png in Resources */,
+				269AEA5F1532831E0070867E /* IGDZBackground_Idle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +283,7 @@
 			files = (
 				269AEA321532735B0070867E /* main.m in Sources */,
 				269AEA391532735B0070867E /* AppDelegate.m in Sources */,
+				269AEA5B153274560070867E /* IGConfigurableDropZone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +391,7 @@
 		269AEA541532735C0070867E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
 				INFOPLIST_FILE = "IGConfigurableDropZone/IGConfigurableDropZone-Info.plist";
@@ -380,6 +403,7 @@
 		269AEA551532735C0070867E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
 				INFOPLIST_FILE = "IGConfigurableDropZone/IGConfigurableDropZone-Info.plist";

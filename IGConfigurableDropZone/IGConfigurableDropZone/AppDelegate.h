@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "IGConfigurableDropZone.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    IBOutlet IGConfigurableDropZone *myDropZone;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
