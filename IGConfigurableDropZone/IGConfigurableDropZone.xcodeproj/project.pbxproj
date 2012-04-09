@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		269AEA261532735B0070867E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269AEA251532735B0070867E /* Cocoa.framework */; };
+		269AEA301532735B0070867E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA2E1532735B0070867E /* InfoPlist.strings */; };
+		269AEA321532735B0070867E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA311532735B0070867E /* main.m */; };
+		269AEA361532735B0070867E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA341532735B0070867E /* Credits.rtf */; };
+		269AEA391532735B0070867E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA381532735B0070867E /* AppDelegate.m */; };
+		269AEA3C1532735C0070867E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA3A1532735C0070867E /* MainMenu.xib */; };
+		269AEA441532735C0070867E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269AEA431532735C0070867E /* SenTestingKit.framework */; };
+		269AEA451532735C0070867E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269AEA251532735B0070867E /* Cocoa.framework */; };
+		269AEA4D1532735C0070867E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 269AEA4B1532735C0070867E /* InfoPlist.strings */; };
+		269AEA501532735C0070867E /* IGConfigurableDropZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA4F1532735C0070867E /* IGConfigurableDropZoneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		269AEA461532735C0070867E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269AEA181532735B0070867E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269AEA201532735B0070867E;
+			remoteInfo = IGConfigurableDropZone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		269AEA211532735B0070867E /* IGConfigurableDropZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGConfigurableDropZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		269AEA251532735B0070867E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		269AEA281532735B0070867E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		269AEA291532735B0070867E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		269AEA2A1532735B0070867E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		269AEA2D1532735B0070867E /* IGConfigurableDropZone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGConfigurableDropZone-Info.plist"; sourceTree = "<group>"; };
+		269AEA2F1532735B0070867E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		269AEA311532735B0070867E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		269AEA331532735B0070867E /* IGConfigurableDropZone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGConfigurableDropZone-Prefix.pch"; sourceTree = "<group>"; };
+		269AEA351532735B0070867E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		269AEA371532735B0070867E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		269AEA381532735B0070867E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		269AEA3B1532735C0070867E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		269AEA421532735C0070867E /* IGConfigurableDropZoneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGConfigurableDropZoneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269AEA431532735C0070867E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		269AEA4A1532735C0070867E /* IGConfigurableDropZoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGConfigurableDropZoneTests-Info.plist"; sourceTree = "<group>"; };
+		269AEA4C1532735C0070867E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		269AEA4E1532735C0070867E /* IGConfigurableDropZoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGConfigurableDropZoneTests.h; sourceTree = "<group>"; };
+		269AEA4F1532735C0070867E /* IGConfigurableDropZoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGConfigurableDropZoneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		269AEA1E1532735B0070867E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA261532735B0070867E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269AEA3E1532735C0070867E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA441532735C0070867E /* SenTestingKit.framework in Frameworks */,
+				269AEA451532735C0070867E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		269AEA161532735B0070867E = {
+			isa = PBXGroup;
+			children = (
+				269AEA2B1532735B0070867E /* IGConfigurableDropZone */,
+				269AEA481532735C0070867E /* IGConfigurableDropZoneTests */,
+				269AEA241532735B0070867E /* Frameworks */,
+				269AEA221532735B0070867E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		269AEA221532735B0070867E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA211532735B0070867E /* IGConfigurableDropZone.app */,
+				269AEA421532735C0070867E /* IGConfigurableDropZoneTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		269AEA241532735B0070867E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA251532735B0070867E /* Cocoa.framework */,
+				269AEA431532735C0070867E /* SenTestingKit.framework */,
+				269AEA271532735B0070867E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		269AEA271532735B0070867E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA281532735B0070867E /* AppKit.framework */,
+				269AEA291532735B0070867E /* CoreData.framework */,
+				269AEA2A1532735B0070867E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		269AEA2B1532735B0070867E /* IGConfigurableDropZone */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA371532735B0070867E /* AppDelegate.h */,
+				269AEA381532735B0070867E /* AppDelegate.m */,
+				269AEA3A1532735C0070867E /* MainMenu.xib */,
+				269AEA2C1532735B0070867E /* Supporting Files */,
+			);
+			path = IGConfigurableDropZone;
+			sourceTree = "<group>";
+		};
+		269AEA2C1532735B0070867E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA2D1532735B0070867E /* IGConfigurableDropZone-Info.plist */,
+				269AEA2E1532735B0070867E /* InfoPlist.strings */,
+				269AEA311532735B0070867E /* main.m */,
+				269AEA331532735B0070867E /* IGConfigurableDropZone-Prefix.pch */,
+				269AEA341532735B0070867E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		269AEA481532735C0070867E /* IGConfigurableDropZoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA4E1532735C0070867E /* IGConfigurableDropZoneTests.h */,
+				269AEA4F1532735C0070867E /* IGConfigurableDropZoneTests.m */,
+				269AEA491532735C0070867E /* Supporting Files */,
+			);
+			path = IGConfigurableDropZoneTests;
+			sourceTree = "<group>";
+		};
+		269AEA491532735C0070867E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				269AEA4A1532735C0070867E /* IGConfigurableDropZoneTests-Info.plist */,
+				269AEA4B1532735C0070867E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		269AEA201532735B0070867E /* IGConfigurableDropZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269AEA531532735C0070867E /* Build configuration list for PBXNativeTarget "IGConfigurableDropZone" */;
+			buildPhases = (
+				269AEA1D1532735B0070867E /* Sources */,
+				269AEA1E1532735B0070867E /* Frameworks */,
+				269AEA1F1532735B0070867E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGConfigurableDropZone;
+			productName = IGConfigurableDropZone;
+			productReference = 269AEA211532735B0070867E /* IGConfigurableDropZone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		269AEA411532735C0070867E /* IGConfigurableDropZoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269AEA561532735C0070867E /* Build configuration list for PBXNativeTarget "IGConfigurableDropZoneTests" */;
+			buildPhases = (
+				269AEA3D1532735C0070867E /* Sources */,
+				269AEA3E1532735C0070867E /* Frameworks */,
+				269AEA3F1532735C0070867E /* Resources */,
+				269AEA401532735C0070867E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269AEA471532735C0070867E /* PBXTargetDependency */,
+			);
+			name = IGConfigurableDropZoneTests;
+			productName = IGConfigurableDropZoneTests;
+			productReference = 269AEA421532735C0070867E /* IGConfigurableDropZoneTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		269AEA181532735B0070867E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 269AEA1B1532735B0070867E /* Build configuration list for PBXProject "IGConfigurableDropZone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 269AEA161532735B0070867E;
+			productRefGroup = 269AEA221532735B0070867E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				269AEA201532735B0070867E /* IGConfigurableDropZone */,
+				269AEA411532735C0070867E /* IGConfigurableDropZoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		269AEA1F1532735B0070867E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA301532735B0070867E /* InfoPlist.strings in Resources */,
+				269AEA361532735B0070867E /* Credits.rtf in Resources */,
+				269AEA3C1532735C0070867E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269AEA3F1532735C0070867E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA4D1532735C0070867E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269AEA401532735C0070867E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		269AEA1D1532735B0070867E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA321532735B0070867E /* main.m in Sources */,
+				269AEA391532735B0070867E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269AEA3D1532735C0070867E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269AEA501532735C0070867E /* IGConfigurableDropZoneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		269AEA471532735C0070867E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269AEA201532735B0070867E /* IGConfigurableDropZone */;
+			targetProxy = 269AEA461532735C0070867E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		269AEA2E1532735B0070867E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269AEA2F1532735B0070867E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		269AEA341532735B0070867E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269AEA351532735B0070867E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		269AEA3A1532735C0070867E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269AEA3B1532735C0070867E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		269AEA4B1532735C0070867E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269AEA4C1532735C0070867E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		269AEA511532735C0070867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		269AEA521532735C0070867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		269AEA541532735C0070867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
+				INFOPLIST_FILE = "IGConfigurableDropZone/IGConfigurableDropZone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		269AEA551532735C0070867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
+				INFOPLIST_FILE = "IGConfigurableDropZone/IGConfigurableDropZone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		269AEA571532735C0070867E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGConfigurableDropZone.app/Contents/MacOS/IGConfigurableDropZone";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
+				INFOPLIST_FILE = "IGConfigurableDropZoneTests/IGConfigurableDropZoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		269AEA581532735C0070867E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGConfigurableDropZone.app/Contents/MacOS/IGConfigurableDropZone";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGConfigurableDropZone/IGConfigurableDropZone-Prefix.pch";
+				INFOPLIST_FILE = "IGConfigurableDropZoneTests/IGConfigurableDropZoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		269AEA1B1532735B0070867E /* Build configuration list for PBXProject "IGConfigurableDropZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269AEA511532735C0070867E /* Debug */,
+				269AEA521532735C0070867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		269AEA531532735C0070867E /* Build configuration list for PBXNativeTarget "IGConfigurableDropZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269AEA541532735C0070867E /* Debug */,
+				269AEA551532735C0070867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		269AEA561532735C0070867E /* Build configuration list for PBXNativeTarget "IGConfigurableDropZoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269AEA571532735C0070867E /* Debug */,
+				269AEA581532735C0070867E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 269AEA181532735B0070867E /* Project object */;
+}
