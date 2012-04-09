@@ -19,18 +19,23 @@
     SEL dragExitedAction;
     
     NSObject* targetObject;
+    
+    NSMutableArray *dragTypes;
 }
 
 
 
-- (void) setDropAction:(SEL)theAction target:(id)sender;
-- (void) setDragEnteredAction:(SEL)theAction target:(id)sender;
-- (void) setDragExitedAction:(SEL)theAction target:(id)sender;
+- (void) setDropAction:(SEL)theAction target:(id)theTarget;
+- (void) setDragEnteredAction:(SEL)theAction target:(id)theTarget;
+- (void) setDragExitedAction:(SEL)theAction target:(id)theTarget;
 
 - (void) setBackgroundImage:(NSImage*)bgImage;
 
 
 - (void) fadeIn;
 - (void) fadeOut;
+
+- (void) addDragType:(NSString*)type;
+- (void) removeDragType:(NSString*)type;
 
 @end

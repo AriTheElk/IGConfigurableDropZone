@@ -13,21 +13,21 @@
 
 
 
-- (void) setDropAction:(SEL)theAction target:(id)sender
+- (void) setDropAction:(SEL)theAction target:(id)theTarget
 {
-    targetObject = sender;
+    targetObject = theTarget;
     dropAction = theAction;
 }
 
-- (void) setDragEnteredAction:(SEL)theAction target:(id)sender
+- (void) setDragEnteredAction:(SEL)theAction target:(id)theTarget
 {
-    targetObject = sender;
+    targetObject = theTarget;
     dragEnteredAction = theAction;
 }
 
-- (void) setDragExitedAction:(SEL)theAction target:(id)sender
+- (void) setDragExitedAction:(SEL)theAction target:(id)theTarget
 {
-    targetObject = sender;
+    targetObject = theTarget;
     dragExitedAction = theAction;
 }
 
@@ -49,6 +49,19 @@
 }
 
 
+- (void) addDragType:(NSString *)type
+{
+    [dragTypes addObject:type];
+    [self registerForDraggedTypes:dragTypes];
+}
+
+- (void) removeDragType:(NSString *)type
+{
+    [dragTypes removeObject:type];
+    [self registerForDraggedTypes:dragTypes];
+}
+
+
 
 
 
@@ -59,8 +72,11 @@
 
     }
     
-    [self registerForDraggedTypes:[NSArray arrayWithObjects:NSTIFFPboardType, 
+    [self registerForDraggedTypes:[NSArray arrayWithObjects:NSPasteboardTypeTIFF, 
                                    NSFilenamesPboardType, nil]];
+    
+    dragTypes = [[NSMutableArray alloc] init];
+    
     
     return self;
 }

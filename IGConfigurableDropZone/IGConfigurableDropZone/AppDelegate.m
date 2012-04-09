@@ -13,8 +13,9 @@
 @synthesize window = _window;
 
 
-- (void) theDropAction
+- (void) theDropAction:(NSArray*)theFiles
 {
+    NSLog(@"%@", theFiles);
     [myDropZone fadeOut];
 }
 
@@ -33,7 +34,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [myDropZone setDropAction:@selector(theDropAction) target:self];
+    [myDropZone setDropAction:@selector(theDropAction:) target:self];
     [myDropZone setDragEnteredAction:@selector(theDragEnteredAction) target:self];
     [myDropZone setDragExitedAction:@selector(theDragExitedAction) target:self];
     
